@@ -59,21 +59,21 @@ let set_width = "4.5vw";
 function str_to_img(val) {
     const img = document.createElement('img')
     if (val === '1') {
-        img.src = "wall.png";
+        img.src = "../images/wall.png";
     } else if (val === '0') {
-        img.src = "tile1.png";
+        img.src = "../images/tile1.gif";
     } else if (val === "o" || val === "O"){
-        img.src = "obstacle.png";
+        img.src = "../images/obstacle.gif";
     } else if (val === "h" || val === "H"){
-        img.src = "hunter.png";
+        img.src = "../images/hunter.gif";
     } else if (val === "5"){
-        img.src = "treasure1.png";
+        img.src = "../images/treasure1.png";
     } else if (val === "6"){
-        img.src = "treasure2.png";
+        img.src = "../images/treasure2.png";
     } else if (val === "7"){
-        img.src = "treasure3.png";
+        img.src = "../images/treasure3.gif";
     } else if (val === "8"){
-        img.src = "treasure1.png";
+        img.src = "../images/treasure4.gif";
     }  
 
     img.style.height = set_height;
