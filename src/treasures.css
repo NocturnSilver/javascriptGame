@@ -1,0 +1,284 @@
+/*Global variables and global design----------------------*/
+
+:root{
+
+    /*Background colors*/
+    --darkbg1:#2e3440;
+    --darkbg2:#3b4252;
+    --darkbg3:#434c5e;
+    --darkbg4:#4c566a;
+
+    --light1:#d8dee9;
+    --light2:#e5e9f0;
+    --light3:#eceff4;
+
+    --accent1:#8fbcbb;
+    --accent2:#88c0d0;
+    --accent3:#81a1c1;
+    --accent4:#5e81ac;
+
+    --transition: 0.3s ease-in-out;
+    --transglow: 0.5s ease-in-out;
+}
+
+/*Hover effects ----------------------------------------------------*/
+
+#endsetup:hover {
+    border-color: var(--accent4);
+    background-color: var(--darkbg2);
+    color: var(--accent1);
+}
+
+h1:hover {
+    scale: 1.05;
+    transition: var(--transglow);
+}
+
+/*----------------- Display Message Designs ------------------*/
+
+.warning {
+    color: red;
+    font-weight: bold;
+}
+
+/* Element Desgins ------------------------------------------*/
+
+html {
+    display: grid;
+    width: 100%;
+    min-height: 100%;
+    background-color: #141924;
+}
+
+h2 {
+    margin-bottom: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+body {
+    height: 10vh;
+    display: grid;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    margin-top: 1vw;
+    grid-template-rows: 0.5fr 1fr 1fr 0.9fr 0.1fr; 
+    grid-template-columns: auto; 
+    row-gap: 0.5vw;
+    column-gap: 3vw;
+    /* aspect-ratio: 1.5fr / 1fr; */
+    grid-template-areas:
+    "map map map h1"
+    "map map map msgbox"
+    "map map map stats"
+    "map map map button"
+    "footer footer footer footer"
+    ;
+}
+
+h1 {
+    grid-area: h1;
+    height: 4.5vw;
+
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    
+    vertical-align: middle;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3vw;
+
+    transition: var(--transglow);
+    padding-top: 0.5vw; 
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 0.5vw;
+
+    border: solid 4px;
+    border-color: var(--accent4);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000060, 
+    0px 12px 12px #00000015;
+
+    background-color: var(--darkbg1);
+    color: var(--accent1);
+    
+    
+
+}
+
+div {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vw;
+    font-size: 1vw;
+    border: solid 4px;
+    border-color: var(--accent4);
+    background-color: var(--darkbg1);
+    color: var(--accent2);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000060, 
+    0px 12px 12px #00000015;
+    overflow-wrap: break-word;
+}
+
+#endsetup {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    grid-area: button;
+    height: 4vw;
+    width: 30vw;
+    font-size: 1vw;
+    border: solid 4px;
+    border-color: var(--accent4);
+    background-color: var(--darkbg1);
+    color: var(--accent2);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000060, 
+    0px 12px 12px #00000015;
+    overflow-wrap: break-word;
+}
+
+
+#stats {
+    height: 18vw;
+    grid-area: stats;
+    margin-bottom: 0%;
+    display: grid;
+    grid-template-rows: auto; 
+    grid-template-columns: auto;
+    row-gap: 0.5vw;
+    column-gap: 1vw;
+    grid-template-areas:
+    "score score"
+    "trs1 trs2"
+    "trs3 trs4 "
+    ; 
+}
+
+#trs1 img, #trs2 img, #trs3 img, #trs4 img {
+    width:  3.3vw;
+    height: 3.3vw;
+    text-align: center;
+}
+
+#score {
+    font-size: 0.9vw;
+    margin: 10px 0px 0px 0px;
+    grid-area: score;
+    padding: 1vw 1vw 1vw 1vw;
+}
+
+#trs1 {
+    text-align: center;
+    font-size: 2.5vw;
+    height: 1.5vw;
+    padding: 1vw;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    grid-area: trs1;
+}
+
+#trs2 {
+    text-align: center;
+    font-size: 2.5vw;
+    height: 1.5vw;
+    padding: 1vw;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    grid-area: trs2;
+}
+
+#trs3 {
+    text-align: center;
+    font-size: 2.5vw;
+    height: 1.5vw;
+    padding: 1vw;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    grid-area: trs3;
+}
+
+#trs4 {
+    text-align: center;
+    font-size: 2.5vw;
+    height: 1.5vw;
+    border: none;
+    box-shadow: none;
+    padding: 1vw;
+    margin: 0;
+    grid-area: trs4;
+}
+
+#map {
+    padding: 1vw;
+    width: 100%;
+    grid-area: map;
+}
+
+#msgbox {
+    height: 10vw;
+    grid-area: msgbox;
+    font-size: 1.1vw;
+    word-wrap: break-word;
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    padding: 1vw;
+}
+
+.wrapper {
+    display: inline-block;
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    bottom: 0;
+    float: left;
+    text-align: center;
+    background-color: var(--darkbg4);
+    color: var(--accent2);
+    text-align: center;
+}
+
+table {
+    margin-left: 3vw;
+    width: 6vw;
+    height: 6vw;
+    border-collapse: collapse;
+    grid-area: table1;
+    background-color: var(--darkbg1);
+    color: var(--accent3);
+    box-shadow: 0px 4px 4px #00000060, 
+    0px 12px 12px #00000015;
+    
+    
+}
+
+tbody, tr {
+    padding: 5vw;
+}
+
+td {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+tbody, tr, th, td {
+    width: 6vw;
+    height: 6vw;
+    text-align: center;
+    background-color: #1c242a;
+}
+
+
+
+
+
