@@ -80,23 +80,23 @@ endButton.addEventListener("click", endHandler);
 function str_to_img(val) {
     const img = document.createElement('img')
     if (val === '1') {
-        img.src = "wall.png";
+        img.src = "../images/wall.png";
     } else if (val === '2') {
-        img.src = "wall2.png";
+        img.src = "../images/wall2.png";
     }else if (val === '0') {
-        img.src = "tile1.gif";
+        img.src = "../images/tile1.gif";
     } else if (val === "o" || val === "O"){
-        img.src = "obstacle.gif";
+        img.src = "../images/obstacle.gif";
     } else if (val === "h" || val === "H"){
-        img.src = "hunter.gif";
+        img.src = "../images/hunter.gif";
     } else if (val === "5"){
-        img.src = "treasure1.png";
+        img.src = "../images/treasure1.png";
     } else if (val === "6"){
-        img.src = "treasure2.png";
+        img.src = "../images/treasure2.png";
     } else if (val === "7"){
-        img.src = "treasure3.gif";
+        img.src = "../images/treasure3.gif";
     } else if (val === "8"){
-        img.src = "treasure4.gif";
+        img.src = "../images/treasure4.gif";
     }  
 
     // Set dimensions of the image based on variable
