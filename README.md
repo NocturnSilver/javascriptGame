@@ -2,4 +2,4 @@
 
 This project was based on the specification for an assignment. All rules applied to the game was specified.
 
-All art found in the game was made by Nathan Vance See.
+All art found in the game was made by Nathan Vance See. Please do not use the art found in this repository unless given permission.
