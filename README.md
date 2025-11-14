@@ -1,6 +1,6 @@
 # Javascrip Game Project
 
-This project was based on the specification for an assignment for module COMP519 Web Programming. 
+This project was based on the specification for an assignment.
 All rules applied to the game follows the assignment specification set by the lecturer.
 
 This project/assignment explored the usage of event callers and making a game following the Model-View-Controller paradigm for the Treasure Hunters game.
