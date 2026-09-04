@@ -1,4 +1,4 @@
-# Javascrip Game Project
+# Javascript Game Project
 
 This project was based on the specification for an assignment.
 All rules applied to the game follows the assignment specification set by the lecturer.
